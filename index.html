@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <object data="scratch-mine.swf" width="100%" height="850" type="application/x-shockwave-flash"></object>
+    <script>
+        window.JSeditorReady = function () {
+            alert('正在加载，文件较大，请耐心等待');
+            return true;
+        };
+        window.showPage = function (addr) {
+            if (addr === 'home') {
+                console.log(location.href)
+                //location.href = '/';
+            }
+        }
+    </script>
+</body>
+
+</html>
